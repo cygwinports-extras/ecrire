@@ -1,0 +1,17 @@
+GIT_URI="git://git.enlightenment.org/apps/ecrire.git"
+GIT_REV=1d1911c
+inherit git cmake
+
+NAME="ecrire"
+VERSION=0.1.0
+RELEASE=1
+CATEGORY="Editors"
+SUMMARY="Enlightenment text editor"
+DESCRIPTION="A simple text editor based on the Enlightenment Foundation
+Libraries."
+HOMEPAGE="http://www.enlightenment.org/"
+
+PATCH_URI="
+	0.1.0-cmake-find-efl.patch
+	0.1.0-libintl.patch
+"

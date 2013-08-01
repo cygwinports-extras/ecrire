@@ -1,0 +1,11 @@
+--- origsrc/ecrire/src/bin/CMakeLists.txt	2013-07-31 23:48:08.000000000 -0500
++++ src/ecrire/src/bin/CMakeLists.txt	2013-07-31 23:59:07.598218500 -0500
+@@ -32,4 +32,8 @@ target_link_libraries(ecrire
+    ${EET_LIBRARIES}
+    )
+ 
++if(CYGWIN)
++target_link_libraries(ecrire intl)
++endif(CYGWIN)
++
+ install(TARGETS ecrire DESTINATION bin)

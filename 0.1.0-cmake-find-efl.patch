@@ -1,0 +1,13 @@
+This is not recursive
+
+--- origsrc/ecrire/CMakeLists.txt	2013-07-31 23:48:08.000000000 -0500
++++ src/ecrire/CMakeLists.txt	2013-07-31 23:54:17.443622600 -0500
+@@ -6,7 +6,7 @@ set(VMIC 0)
+ set(PACKAGE_VERSION ${VMAJ}.${VMIN}.${VMIC})
+ 
+ set(PACKAGE ${CMAKE_PROJECT_NAME})
+-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
++set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules" "${CMAKE_SOURCE_DIR}/cmake/Modules/legacy")
+ 
+ include_directories ("${PROJECT_BINARY_DIR}")
+ 
